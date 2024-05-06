@@ -1,0 +1,38 @@
+[Description]
+This Java project implements a simple voice-controlled assistant using the CMU Sphinx speech recognition library.
+The assistant listens for voice commands and performs various actions, such as opening Google Chrome, closing Chrome, and calculating arithmetic expressions. 
+It utilizes external libraries for speech recognition and arithmetic expression evaluation.
+
+[Approach/Algorithms]
+
+1.Speech Recognition:
+  *Utilizes the CMU Sphinx library for live speech recognition.
+  *The application listens for voice input and converts it into text, which is then processed to identify the corresponding command.
+2.Command Execution:
+  *Maps recognized voice commands to specific actions using a map data structure (commandActions).
+  *Executes corresponding methods (openChrome, closeChrome, calculate) based on the recognized command.
+
+[Test Procedures]
+
+1.Unit Testing:
+  *Test individual methods (openChrome, closeChrome, calculate) to ensure they produce the expected output for different scenarios.
+  *Mock input speech results to simulate voice commands and verify the correctness of command execution.
+2.Functional Testing:
+  *Test the overall functionality of the voice assistant by providing voice commands and verifying that the corresponding actions are performed correctly.
+  *Ensure that the assistant responds appropriately to valid commands and handles errors gracefully.
+3.Integration Testing:
+  *Test the integration of the voice recognition and command execution components.
+  *Verify that the speech recognizer correctly interprets voice input and triggers the corresponding action.
+4.Error Handling Testing:
+  *Test error handling mechanisms by introducing invalid commands or unexpected inputs.
+  *Verify that the application handles exceptions and errors without crashing and provides informative error messages.
+5.Performance Testing:
+  *Measure the response time of the voice assistant for different commands and input lengths.
+  *Evaluate the resource usage (CPU, memory) of the application during speech recognition and command execution.
+
+[Results]
+
+*The voice assistant successfully recognizes voice commands and performs corresponding actions, such as opening and closing Google Chrome and calculating arithmetic expressions.
+*The application provides a responsive and intuitive interface for users to interact with via voice commands.
+*Error handling mechanisms ensure that the application gracefully handles exceptions and provides informative feedback to users in case of errors or invalid inputs.
+*Performance testing confirms that the voice assistant operates efficiently and responds promptly to user commands without significant delays.
